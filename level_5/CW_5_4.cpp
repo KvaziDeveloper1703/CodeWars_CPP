@@ -34,8 +34,6 @@ Output: ["NORTH", "WEST", "SOUTH", "EAST"]
 Вывод: ["NORTH", "WEST", "SOUTH", "EAST"]
 
 https://www.codewars.com/kata/550f22f4d758534c1100025a
-
-https://www.codewars.com/kata/550f22f4d758534c1100025a
 */
 
 #include <iostream>
@@ -46,7 +44,7 @@ https://www.codewars.com/kata/550f22f4d758534c1100025a
 class DirReduction {
 public:
     static std::vector<std::string> dirReduc(std::vector<std::string> &arr) {
-        
+
         std::vector<std::string> stack;
         std::unordered_map<std::string, std::string> opposites = {
             {"NORTH", "SOUTH"},

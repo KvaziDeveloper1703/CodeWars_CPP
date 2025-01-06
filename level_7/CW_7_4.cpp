@@ -37,14 +37,14 @@ https://www.codewars.com/kata/554b4ac871d6813a03000035
 std::vector<int> parse_numbers(const std::string& numbers) {
     std::vector<int> result;
     std::string temp = "";
-    for (char c : numbers) {
-        if (c == ' ') {
+    for (char character : numbers) {
+        if (character == ' ') {
             if (!temp.empty()) {
                 result.push_back(std::stoi(temp));
                 temp = "";
             }
         } else {
-            temp += c;
+            temp += character;
         }
     }
     if (!temp.empty()) {
@@ -55,15 +55,15 @@ std::vector<int> parse_numbers(const std::string& numbers) {
 
 std::string find_high_and_low(const std::string& numbers) {
     std::vector<int> parsed_numbers = parse_numbers(numbers);
-    int highest = parsed_numbers[0];
-    int lowest = parsed_numbers[0];
+    int highest_number = parsed_numbers[0];
+    int lowest_number = parsed_numbers[0];
 
-    for (int num : parsed_numbers) {
-        if (num > highest) highest = num;
-        if (num < lowest) lowest = num;
+    for (int number : parsed_numbers) {
+        if (number > highest_number) highest_number = number;
+        if (number < lowest_number) lowest_number = number;
     }
 
-    return std::to_string(highest) + " " + std::to_string(lowest);
+    return std::to_string(highest_number) + " " + std::to_string(lowest_number);
 }
 
 int main() {

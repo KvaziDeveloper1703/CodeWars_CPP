@@ -17,12 +17,12 @@ https://www.codewars.com/kata/546e2562b03326a88e000020
 #include <iostream>
 #include <string>
 
-int square_digits(int num) {
+int square_digits(int number) {
     std::string result = "";
-    std::string numStr = std::to_string(num);
+    std::string number_str = std::to_string(number);
 
-    for (char digit_char : numStr) {
-        int digit = digit_char - '0';
+    for (char digit_character : number_str) {
+        int digit = digit_character - '0';
         int squared = digit * digit;
         result += std::to_string(squared);
     }

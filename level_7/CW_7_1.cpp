@@ -2,7 +2,7 @@
 Write a function that counts the number of vowels in a given string.
 
 Rules:
-+ Vowels are defined as a, e, i, o, u.
++ Vowels are defined as a, e, i, o, u, y.
 + The input string will contain only lowercase letters and/or spaces.
 + Return the total count of vowels in the string.
 
@@ -13,7 +13,7 @@ Input: "beautiful day" → Output: 6 (Explanation: e, a, u, i, a, y)
 Напишите функцию, которая подсчитывает количество гласных в заданной строке.
 
 Правила:
-+ Гласные: a, e, i, o, u.
++ Гласные: a, e, i, o, u, y.
 + Входная строка будет содержать только строчные буквы и/или пробелы.
 + Верните общее количество гласных в строке.
 
@@ -30,7 +30,7 @@ https://www.codewars.com/kata/54ff3102c1bad923760001f3
 int count_vowels(const std::string& str) {
     int count = 0;
     for (char c : str) {
-        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'y') {
             ++count;
         }
     }

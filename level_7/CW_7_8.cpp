@@ -38,12 +38,12 @@ bool has_equal_x_and_o(const std::string& input) {
     int count_x = 0;
     int count_o = 0;
 
-    for (char c : input) {
-        char lower_char = std::tolower(c);
+    for (char character : input) {
+        char lower_character = std::tolower(character);
 
-        if (lower_char == 'x') {
+        if (lower_character == 'x') {
             ++count_x;
-        } else if (lower_char == 'o') {
+        } else if (lower_character == 'o') {
             ++count_o;
         }
     }
