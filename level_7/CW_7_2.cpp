@@ -28,12 +28,12 @@ https://www.codewars.com/kata/52fba66badcd10859f00097e
 #include <string>
 #include <algorithm>
 
-std::string remove_vowels(const std::string& input) {
+std::string remove_vowels(const std::string& given_string) {
     std::string result;
-    for (char c : input) {
-        if (!(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'y' ||
-              c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U' || c == 'Y')) {
-            result += c;
+    for (char character : given_string) {
+        if (!(character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u' || character == 'y' ||
+              character == 'A' || character == 'E' || character == 'I' || character == 'O' || character == 'U' || character == 'Y')) {
+            result += character;
         }
     }
     return result;
