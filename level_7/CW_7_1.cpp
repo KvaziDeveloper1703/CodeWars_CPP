@@ -7,8 +7,8 @@ Rules:
 + Return the total count of vowels in the string.
 
 Examples:
-Input: "hello" → Output: 2 (Explanation: e, o)
-Input: "beautiful day" → Output: 6 (Explanation: e, a, u, i, a, y)
+Input: "hello" → Output: 2
+Input: "beautiful day" → Output: 6
 
 Напишите функцию, которая подсчитывает количество гласных в заданной строке.
 
@@ -18,8 +18,8 @@ Input: "beautiful day" → Output: 6 (Explanation: e, a, u, i, a, y)
 + Верните общее количество гласных в строке.
 
 Примеры:
-Ввод: "hello" → Вывод: 2 (Объяснение: e, o)
-Ввод: "beautiful day" → Вывод: 6 (Объяснение: e, a, u, i, a, y)
+Ввод: "hello" → Вывод: 2
+Ввод: "beautiful day" → Вывод: 6
 
 https://www.codewars.com/kata/54ff3102c1bad923760001f3
 */
@@ -27,10 +27,10 @@ https://www.codewars.com/kata/54ff3102c1bad923760001f3
 #include <iostream>
 #include <string>
 
-int count_vowels(const std::string& str) {
+int count_vowels(const std::string& given_string) {
     int count = 0;
-    for (char c : str) {
-        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'y') {
+    for (char character : given_string) {
+        if (character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u' || character == 'y') {
             ++count;
         }
     }
