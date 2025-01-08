@@ -24,9 +24,9 @@ https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0
 #include <string>
 
 std::string remove_first_and_last(const std::string& input) {
-    size_t startIndex = 1;
-    size_t newLength = input.size() - 2;
-    std::string result = input.substr(startIndex, newLength);
+    size_t start_index = 1;
+    size_t new_length = input.size() - 2;
+    std::string result = input.substr(start_index, new_length);
 
     return result;
 }
