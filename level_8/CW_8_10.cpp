@@ -16,9 +16,9 @@ https://www.codewars.com/kata/55d24f55d7dd296eb9000030
 
 #include <iostream>
 
-int summation(int num) {
+int summation(int number) {
     int sum = 0;
-    for (int i = 1; i <= num; ++i) {
+    for (int i = 1; i <= number; ++i) {
         sum += i;
     }
     return sum;
