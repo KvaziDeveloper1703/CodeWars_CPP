@@ -32,17 +32,17 @@ https://www.codewars.com/kata/5667e8f4e3f572a8f2000039
 
 class Accumul {
 public:
-    static std::string accum(const std::string& s) {
+    static std::string accum(const std::string& given_string) {
         std::string result;
 
-        for (size_t i = 0; i < s.length(); ++i) {
-            result += std::toupper(s[i]);
+        for (size_t i = 0; i < given_string.length(); ++i) {
+            result += std::toupper(given_string[i]);
 
             for (size_t j = 0; j < i; ++j) {
-                result += std::tolower(s[i]);
+                result += std::tolower(given_string[i]);
             }
 
-            if (i < s.length() - 1) {
+            if (i < given_string.length() - 1) {
                 result += '-';
             }
         }
