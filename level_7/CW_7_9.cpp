@@ -31,12 +31,12 @@ https://www.codewars.com/kata/54ba84be607a92aa900000f1
 #include <unordered_set>
 #include <cctype>
 
-bool is_isogram(const std::string& input) {
+bool is_isogram(const std::string& given_string) {
     
     std::unordered_set<char> seen_letters;
 
-    for (char c : input) {
-        char lowercase_char = std::tolower(c);
+    for (char character : given_string) {
+        char lowercase_char = std::tolower(character);
         if (seen_letters.find(lowercase_char) != seen_letters.end()) {
             return false;
         }
