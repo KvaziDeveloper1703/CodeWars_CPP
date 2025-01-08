@@ -17,10 +17,10 @@ https://www.codewars.com/kata/57a0e5c372292dd76d000d7e
 #include <iostream>
 #include <string>
 
-std::string repeat_string(int n, const std::string& given_string) {
+std::string repeat_string(int n, const std::string& s) {
     std::string result;
     for (int i = 0; i < n; ++i) {
-        result += given_string;
+        result += s;
     }
     return result;
 }
