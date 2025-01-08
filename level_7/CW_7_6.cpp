@@ -29,13 +29,13 @@ https://www.codewars.com/kata/56747fd5cb988479af000028
 #include <iostream>
 #include <string>
 
-std::string get_middle(const std::string& input) {
-    size_t length = input.length();
+std::string get_middle(const std::string& given_string) {
+    size_t length = given_string.length();
     
     if (length % 2 == 0) {
-        return input.substr(length / 2 - 1, 2);
+        return given_string.substr(length / 2 - 1, 2);
     } else {
-        return input.substr(length / 2, 1);
+        return given_string.substr(length / 2, 1);
     }
 }
 
