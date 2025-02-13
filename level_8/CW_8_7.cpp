@@ -1,15 +1,7 @@
 /*
 Write a function that takes an array of numbers, squares each number, and then returns the sum of the squared numbers.
 
-Example:
-Input: [1, 2, 2]
-Output: 9
-
 Напишите функцию, которая принимает массив чисел, возводит каждое число в квадрат и возвращает сумму всех квадратов.
-
-Пример:
-Ввод: [1, 2, 2]
-Вывод: 9
 
 https://www.codewars.com/kata/515e271a311df0350d00000f
 */
@@ -18,9 +10,9 @@ https://www.codewars.com/kata/515e271a311df0350d00000f
 #include <vector>
 #include <numeric>
 
-int sum_of_squares(const std::vector<int>& numbers) {
+int sum_of_squares(const std::vector<int>& given_numbers) {
     int sum = 0;
-    for (int number : numbers) {
+    for (int number : given_numbers) {
         sum += number * number;
     }
     return sum;
