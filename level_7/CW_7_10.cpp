@@ -1,7 +1,5 @@
 /*
 Write a function accum that takes a string as input and returns a new string formatted as follows:
-
-Rules:
 + For each character in the input string, repeat the character based on its position in the string (starting from 1).
 + Capitalize the first occurrence of the character and make the rest lowercase.
 + Separate each resulting group with a hyphen (-).
@@ -9,11 +7,8 @@ Rules:
 Examples:
 Input: "abcd" → Output: "A-Bb-Ccc-Dddd"
 Input: "RqaEzty" → Output: "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
-Input: "cwAt" → Output: "C-Ww-Aaa-Tttt"
 
 Напишите функцию accum, которая принимает строку в качестве входных данных и возвращает новую строку, отформатированную следующим образом:
-
-Правила:
 + Для каждого символа входной строки повторите его столько раз, какой его порядковый номер в строке (начиная с 1).
 + Первый символ группы должен быть с заглавной буквы, остальные — строчные.
 + Разделите каждую группу с помощью дефиса (-).
@@ -21,42 +16,25 @@ Input: "cwAt" → Output: "C-Ww-Aaa-Tttt"
 Примеры:
 Ввод: "abcd" → Вывод: "A-Bb-Ccc-Dddd"
 Ввод: "RqaEzty" → Вывод: "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
-Ввод: "cwAt" → Вывод: "C-Ww-Aaa-Tttt"
 
 https://www.codewars.com/kata/5667e8f4e3f572a8f2000039
 */
 
 #include <iostream>
 #include <string>
-#include <cctype>
 
-class Accumul {
-public:
-    static std::string accum(const std::string& given_string) {
-        std::string result;
-
-        for (size_t i = 0; i < given_string.length(); ++i) {
-            result += std::toupper(given_string[i]);
-
-            for (size_t j = 0; j < i; ++j) {
-                result += std::tolower(given_string[i]);
-            }
-
-            if (i < given_string.length() - 1) {
-                result += '-';
-            }
-        }
-
-        return result;
+std::string accum(const std::string& given_string) {
+    std::string result;
+    for (size_t i = 0; i < given_string.size(); ++i) {
+        if (i > 0) result += "-";
+        result += std::toupper(given_string[i]);
+        result += std::string(i, std::tolower(given_string[i]));
     }
-};
+    return result;
+}
 
 int main() {
-    std::cout << "Enter a string: ";
-    std::string input;
-    std::cin >> input;
-
-    std::cout << "Formatted string: " << Accumul::accum(input) << std::endl;
-
+    std::cout << accum("abcd") << std::endl;
+    std::cout << accum("RqaEzty") << std::endl;
     return 0;
 }

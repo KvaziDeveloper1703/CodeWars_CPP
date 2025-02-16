@@ -8,8 +8,6 @@ Rules:
 Examples:
 Input: "test" → Output: "es"
 Input: "testing" → Output: "t"
-Input: "middle" → Output: "dd"
-Input: "A" → Output: "A"
 
 Напишите функцию, которая принимает непустую строку и возвращает её средний символ или символы.
 
@@ -20,8 +18,6 @@ Input: "A" → Output: "A"
 Примеры:
 Ввод: "test" → Вывод: "es"
 Ввод: "testing" → Вывод: "t"
-Ввод: "middle" → Вывод: "dd"
-Ввод: "A" → Вывод: "A"
 
 https://www.codewars.com/kata/56747fd5cb988479af000028
 */

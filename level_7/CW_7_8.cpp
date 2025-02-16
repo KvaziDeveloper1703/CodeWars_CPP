@@ -1,31 +1,17 @@
 /*
 Write a function that checks if a string contains the same number of 'x' and 'o' characters.
 
-Rules:
-+ The function should return a boolean value (true or false).
-+ The check must be case-insensitive ('X' and 'x' are considered the same, as well as 'O' and 'o').
-+ The string may contain any characters, and if no 'x' or 'o' are present, the function should return true.
-
 Examples:
 Input: "ooxx" → Output: true
 Input: "xooxx" → Output: false
 Input: "ooxXm" → Output: true
-Input: "zpzpzpp" → Output: true (no 'x' or 'o')
-Input: "zzoo" → Output: false
 
 Напишите функцию, которая проверяет, содержит ли строка одинаковое количество символов 'x' и 'o'.
-
-Правила:
-+ Функция должна возвращать логическое значение (true или false).
-+ Проверка должна быть нечувствительной к регистру (буквы 'X' и 'x' считаются одинаковыми, как и 'O' и 'o').
-+ Строка может содержать любые символы, и если в ней нет 'x' и 'o', функция должна возвращать true.
 
 Примеры:
 Ввод: "ooxx" → Вывод: true
 Ввод: "xooxx" → Вывод: false
 Ввод: "ooxXm" → Вывод: true
-Ввод: "zpzpzpp" → Вывод: true (нет 'x' и 'o')
-Ввод: "zzoo" → Вывод: false
 
 https://www.codewars.com/kata/55908aad6620c066bc00002a
 */
@@ -34,11 +20,11 @@ https://www.codewars.com/kata/55908aad6620c066bc00002a
 #include <string>
 #include <cctype>
 
-bool has_equal_x_and_o(const std::string& input) {
+bool has_equal_x_and_o(const std::string& given_string) {
     int count_x = 0;
     int count_o = 0;
 
-    for (char character : input) {
+    for (char character : given_string) {
         char lower_character = std::tolower(character);
 
         if (lower_character == 'x') {
