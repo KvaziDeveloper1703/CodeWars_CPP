@@ -2,16 +2,8 @@
 Write a function that checks if a given integer is a perfect square.
 A number is a perfect square if it is the product of an integer multiplied by itself.
 
-Examples:
-Input: 16 → Output: True
-Input: 14 → Output: False
-
 Напишите функцию, которая проверяет, является ли заданное целое число идеальным квадратом.
 Число является идеальным квадратом, если оно является произведением целого числа на само себя.
-
-Примеры:
-Ввод: 16 → Вывод: True
-Ввод: 14 → Вывод: False
 
 https://www.codewars.com/kata/54c27a33fb7da0db0100040e
 */

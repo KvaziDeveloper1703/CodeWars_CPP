@@ -3,7 +3,6 @@ Write a function that takes a string as input and returns a new string with all 
 
 Rules:
 + Vowels are a, e, i, o, u, y (both uppercase and lowercase).
-+ The letter y is not considered a vowel.
 + Return the modified string without vowels.
 
 Example:
@@ -14,7 +13,6 @@ Output: "Ths wbst s fr lsrs LL!"
 
 Правила:
 + Гласные: a, e, i, o, u, y (как заглавные, так и строчные).
-+ Буква y не считается гласной.
 + Верните модифицированную строку без гласных.
 
 Пример:
