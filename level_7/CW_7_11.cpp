@@ -7,6 +7,7 @@ It is guaranteed that the string will never be empty, and you do not need to acc
 */
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 int find_shortest_word_length(const string& given_string) {
