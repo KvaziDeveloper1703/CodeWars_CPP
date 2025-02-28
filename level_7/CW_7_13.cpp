@@ -18,17 +18,16 @@ Example:
 
 #include <iostream>
 #include <vector>
-#include <algorithm>
+#include <limits>
 using namespace std;
 
-int sum_of_two_lowest_numbers(const vector<int>& given_numbers) {
-    
+long long sum_two_smallest_numbers(const vector<int>& given_numbers) {
     if (given_numbers.size() < 4) return -1;
     
-    int first_min = INT_MAX; 
-    int second_min = INT_MAX;
+    long long first_min = numeric_limits<long long>::max();
+    long long second_min = numeric_limits<long long>::max();
     
-    for (int number : given_numbers) {
+    for (long long number : given_numbers) {
         if (number < first_min) {
             second_min = first_min;
             first_min = number;
@@ -42,6 +41,6 @@ int sum_of_two_lowest_numbers(const vector<int>& given_numbers) {
 
 int main() {
     vector<int> input = {19, 5, 42, 2, 77};
-    cout << "Sum of the two lowest numbers: " << sum_of_two_lowest_numbers(input) << endl;
+    cout << "Sum of the two lowest numbers: " << sum_two_smallest_numbers(input) << endl;
     return 0;
 }
