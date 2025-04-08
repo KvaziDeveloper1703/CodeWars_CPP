@@ -1,5 +1,5 @@
 /*
-Create a function that takes two parameters: an integer N and a string given_string. The function should return a new string consisting of the string given_string repeated exactly N times.
+Write a function that takes two parameters: an integer N and a string given_string. The function should return a new string consisting of the string given_string repeated exactly N times.
 
 Напишите функцию, которая принимает два параметра: целое число N и строку given_string. Функция должна вернуть новую строку, состоящую из строки given_string, повторённой ровно N раз.
 
@@ -18,14 +18,10 @@ std::string repeat_string(int N, const std::string& given_string) {
 }
 
 int main() {
-    int n_1 = 6;
-    std::string string_1 = "I";
+    int N = 5;
+    std::string string = "Hello";
 
-    int n_2 = 5;
-    std::string string_2 = "Hello";
-
-    std::cout << "Input: 6, \"I\" → Output: \"" << repeat_string(n_1, string_1) << "\"" << std::endl;
-    std::cout << "Input: 5, \"Hello\" → Output: \"" << repeat_string(n_2, string_2) << "\"" << std::endl;
+    std::cout << "Input: 5, \"Hello\" → Output: \"" << repeat_string(N, string) << "\"" << std::endl;
 
     return 0;
 }
