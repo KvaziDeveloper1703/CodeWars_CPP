@@ -1,10 +1,10 @@
 /*
-You need to write a function that takes a boolean value as input and returns:
-+ "Yes" if the value is true.
+Write a function that takes a boolean value as input and returns:
++ "Yes" if the value is true;
 + "No" if the value is false.
 
-Вам нужно написать функцию, которая принимает булево значение и возвращает:
-+ "Yes", если значение true.
+Напишите функцию, которая принимает булево значение и возвращает:
++ "Yes", если значение true;
 + "No", если значение false.
 
 https://www.codewars.com/kata/53369039d7ab3ac506000467

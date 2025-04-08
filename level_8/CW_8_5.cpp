@@ -1,7 +1,7 @@
 /*
-You need to write a function that converts a given integer into a string.
+Write a function that converts a given integer into a string.
 
-Вам нужно написать функцию, которая преобразует заданное целое число в строку.
+Напишите функцию, которая преобразует заданное целое число в строку.
 
 https://www.codewars.com/kata/5265326f5fda8eb1160004c8
 */
