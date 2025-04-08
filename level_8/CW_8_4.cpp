@@ -1,11 +1,11 @@
 /*
-Write a function that takes a string as input and returns the string reversed.
+You need to write a function that takes a string as input and returns the string reversed.
 
 Example:
 Input: 'world' → Output: 'dlrow'
 Input: 'word' → Output: 'drow'
 
-Напишите функцию, которая принимает строку в качестве входных данных и возвращает эту строку в перевёрнутом виде.
+Вам нужно написать функцию, которая принимает строку в качестве входных данных и возвращает эту строку в перевёрнутом виде.
 
 Пример:
 Ввод: 'world' → Вывод: 'dlrow'
