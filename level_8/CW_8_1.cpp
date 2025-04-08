@@ -1,7 +1,7 @@
 /*
-Write a function that takes an integer as input and returns:
+You need to write a function that takes an integer as input and returns:
 
-Напишите функцию, которая принимает целое число в качестве входных данных и возвращает:
+Вам нужно написать функцию, которая принимает целое число в качестве входных данных и возвращает:
 
 https://www.codewars.com/kata/53da3dbb4a5168369a0000fe
 */
@@ -10,7 +10,11 @@ https://www.codewars.com/kata/53da3dbb4a5168369a0000fe
 #include <string>
 
 std::string even_or_odd(int given_number) {
-    return (given_number % 2 == 0) ? "Even" : "Odd";
+    if (given_number % 2 == 0) {
+        return "even";
+    } else {
+        return "odd";
+    }
 }
 
 int main() {
