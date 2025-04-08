@@ -1,7 +1,7 @@
 /*
-Given a year, return the century it belongs to.
+Write a function that takes a year and returns the century it belongs to.
 
-Напишите функцию, которая принимает год и возвращает век, к которому он относится.
+Напишите функцию, которая принимает год и возвращает век, к которому этот год относится.
 
 https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097
 */
