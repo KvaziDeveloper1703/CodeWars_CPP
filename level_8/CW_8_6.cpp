@@ -1,9 +1,9 @@
 /*
-Write a function that takes a boolean value as input and returns:
+You need to write a function that takes a boolean value as input and returns:
 + "Yes" if the value is true.
 + "No" if the value is false.
 
-Напишите функцию, которая принимает булево значение и возвращает:
+Вам нужно написать функцию, которая принимает булево значение и возвращает:
 + "Yes", если значение true.
 + "No", если значение false.
 
@@ -14,7 +14,12 @@ https://www.codewars.com/kata/53369039d7ab3ac506000467
 #include <string>
 
 std::string bool_to_string(bool given_value) {
-    return given_value ? "Yes" : "No";
+    if (given_value) {
+        return "Yes";
+    }
+    else {
+        return "No";
+    }
 }
 
 int main() {
