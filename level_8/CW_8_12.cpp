@@ -1,7 +1,7 @@
 /*
-Given an array of integers, your task is to find and return the smallest integer.
+Write a function that takes an array of integers and returns the smallest number in the array.
 
-Дан массив целых чисел. Ваша задача — найти и вернуть наименьшее число.
+Напишите функцию, которая принимает массив целых чисел и возвращает наименьшее число в этом массиве.
 
 https://www.codewars.com/kata/55a2d7ebe362935a210000b2
 */
@@ -9,7 +9,7 @@ https://www.codewars.com/kata/55a2d7ebe362935a210000b2
 #include <iostream>
 #include <vector>
 
-int findSmallest(const std::vector<int>& given_numbers) {
+int find_the_smallest(const std::vector<int>& given_numbers) {
     int smallest_number = given_numbers[0];
     for (int number : given_numbers) {
         if (number < smallest_number) {
@@ -21,7 +21,7 @@ int findSmallest(const std::vector<int>& given_numbers) {
 
 int main() {
     std::vector<int> numbers = {34, 15, 88, 2};
-    std::cout << "Smallest number: " << findSmallest(numbers) << std::endl;
+    std::cout << "Smallest number: " << find_the_smallest(numbers) << std::endl;
 
     return 0;
 }
