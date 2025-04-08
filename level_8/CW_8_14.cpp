@@ -9,9 +9,9 @@ https://www.codewars.com/kata/54edbc7200b811e956000556
 #include <iostream>
 #include <vector>
 
-int countSheep(const std::vector<bool>& sheepArray) {
+int count_sheep(const std::vector<bool>& given_sheep_array) {
     int count = 0;
-    for (bool sheep : sheepArray) {
+    for (bool sheep : given_sheep_array) {
         if (sheep) {
             count++;
         }
@@ -20,13 +20,13 @@ int countSheep(const std::vector<bool>& sheepArray) {
 }
 
 int main() {
-    std::vector<bool> sheepArray = {true, true, true, false,
+    std::vector<bool> sheep_array = {true, true, true, false,
                                     true, true, true, true,
                                     true, false, true, false,
                                     true, false, false, true,
                                     true, true, true, true,
                                     false, false, true, true};
     
-    std::cout << "Number of sheeps: " << countSheep(sheepArray) << std::endl;
+    std::cout << "Number of sheeps: " << count_sheep(sheep_array) << std::endl;
     return 0;
 }
