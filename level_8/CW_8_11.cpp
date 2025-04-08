@@ -1,7 +1,7 @@
 /*
-Given a number, find its opposite.
+Write a function that takes a number as input and returns its opposite.
 
-Дано число. Найдите его противоположное.
+Напишите функцию, которая принимает число и возвращает его противоположное
 
 https://www.codewars.com/kata/56dec885c54a926dcd001095
 */
