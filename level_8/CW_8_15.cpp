@@ -1,7 +1,7 @@
 /*
-We need a function that converts a string into a number.
+Write a function that takes a string and converts it into a number.
 
-Нам нужна функция, которая преобразует строку в число.
+Напишите функцию, которая принимает строку и преобразует её в число.
 
 https://www.codewars.com/kata/544675c6f971f7399a000e79
 */
