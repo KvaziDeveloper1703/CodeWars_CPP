@@ -1,7 +1,7 @@
 /*
-Write a function that takes an array of numbers and returns the sum of all positive numbers in the array. Ignore any negative numbers.
+You need to write a function that takes an array of numbers and returns the sum of all positive numbers in the array. Ignore any negative numbers.
 
-Напишите функцию, которая принимает массив чисел и возвращает сумму всех положительных чисел в массиве. Отрицательные числа игнорируются.
+Вам нужно написать функцию, которая принимает массив чисел и возвращает сумму всех положительных чисел в массиве. Отрицательные числа игнорируются.
 
 https://www.codewars.com/kata/5715eaedb436cf5606000381
 */
