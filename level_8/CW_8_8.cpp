@@ -18,11 +18,9 @@ std::string remove_first_and_last(const std::string& given_string) {
 }
 
 int main() {
-    std::string input1 = "hello";
-    std::string input2 = "abc";
+    std::string input = "hello";
 
-    std::cout << "Input: \"hello\" → Output: \"" << remove_first_and_last(input1) << "\"" << std::endl;
-    std::cout << "Input: \"abc\" → Output: \"" << remove_first_and_last(input2) << "\"" << std::endl;
+    std::cout << "Input: \"hello\" → Output: \"" << remove_first_and_last(input) << "\"" << std::endl;
 
     return 0;
 }
