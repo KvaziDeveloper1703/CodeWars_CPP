@@ -19,7 +19,7 @@ std::vector<int> digitize(long long given_number) {
 }
 
 int main() {
-    std::vector<int> result = digitize(29398267540LL);
+    std::vector<int> result = digitize(29398267540LL); // The suffix "LL" after the numeric literal 29398267540 indicates that the number is of type "long long".
     for (int number : result) {
         std::cout << number << " ";
     }
