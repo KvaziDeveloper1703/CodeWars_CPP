@@ -1,19 +1,9 @@
 /*
-Create a function that returns the sum of the two smallest positive numbers from an array.
-+ The array will always contain at least 4 positive integers.
-+ Only positive integers (no floats or non-positive numbers) will be passed.
+Write a function that returns the sum of the two smallest positive numbers from an array.
 
-Example:
-[19, 5, 42, 2, 77] → 7  
-[10, 343445353, 3453445, 3453545353453] → 3453455  
+Напишите функцию, которая возвращает сумму двух наименьших положительных чисел из массива.
 
-Создайте функцию, которая возвращает сумму двух наименьших положительных чисел из массива.
-+ В массиве всегда будет минимум 4 положительных целых числа.
-+ Входные данные содержат только положительные целые числа (без дробных и неположительных чисел).
-
-Пример:
-[19, 5, 42, 2, 77] → 7  
-[10, 343445353, 3453445, 3453545353453] → 3453455  
+https://www.codewars.com/kata/558fc85d8fd1938afb000014
 */
 
 #include <iostream>
