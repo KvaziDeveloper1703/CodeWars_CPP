@@ -1,19 +1,11 @@
 /*
 Write a function that takes a string as input and returns a new string with all vowels removed.
 
-Rules:
-+ Vowels are a, e, i, o, u, y (both uppercase and lowercase).
-+ Return the modified string without vowels.
-
 Example:
 Input: "This website is for losers LOL!"
 Output: "Ths wbst s fr lsrs LL!"
 
 Напишите функцию, которая принимает строку и возвращает новую строку с удалёнными гласными.
-
-Правила:
-+ Гласные: a, e, i, o, u, y (как заглавные, так и строчные).
-+ Верните модифицированную строку без гласных.
 
 Пример:
 Ввод: "This website is for losers LOL!"
