@@ -1,25 +1,9 @@
 /*
-An isogram is a word with no repeating letters, whether consecutive or non-consecutive. Write a function to check if a given string is an isogram.
+An isogram is a word with no repeating letters.
+Write a function to check if a given string is an isogram.
 
-Rules:
-+ The input string will contain only letters.
-+ The function should ignore case.
-+ An empty string is considered an isogram.
-
-Examples:
-Input: "Dermatoglyphics" → Output: true
-Input: "aba" → Output: false
-
-Изограмма — это слово, в котором нет повторяющихся букв, ни подряд, ни вразброс. Напишите функцию, которая проверяет, является ли заданная строка изограммой.
-
-Правила:
-+ Входная строка содержит только буквы.
-+ Функция должна игнорировать регистр.
-+ Пустая строка считается изограммой.
-
-Примеры:
-Ввод: "Dermatoglyphics" → Вывод: true
-Ввод: "aba" → Вывод: false
+Изограмма — это слово, в котором нет повторяющихся букв.
+Напишите функцию, которая проверяет, является ли заданная строка изограммой.
 
 https://www.codewars.com/kata/54ba84be607a92aa900000f1
 */
