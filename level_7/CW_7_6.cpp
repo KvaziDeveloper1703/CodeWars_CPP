@@ -1,7 +1,5 @@
 /*
 Write a function that takes a non-empty string as input and returns its middle character(s).
-
-Rules:
 + If the string has an odd length, return the single middle character.
 + If the string has an even length, return the two middle characters.
 
@@ -10,8 +8,6 @@ Input: "test" → Output: "es"
 Input: "testing" → Output: "t"
 
 Напишите функцию, которая принимает непустую строку и возвращает её средний символ или символы.
-
-Правила:
 + Если длина строки нечётная, вернуть один средний символ.
 + Если длина строки чётная, вернуть два средних символа.
 
