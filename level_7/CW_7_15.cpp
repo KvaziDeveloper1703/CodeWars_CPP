@@ -2,22 +2,18 @@
 Write a program that filters a list of strings and returns a list containing only your friends' names.
 A name is considered a friend's name if it consists of exactly 4 letters. Otherwise, it is not a friend's name.
 
-Examples:
-Input = ["Ryan", "Kieran", "Jason", "Yous"]
-Output = ["Ryan", "Yous"]
-
-Input = ["Peter", "Stephen", "Joe"]
-Output = []
+Example:
+Input: ["Ryan", "Kieran", "Jason", "Yous"]
+Output: ["Ryan", "Yous"]
 
 Напишите программу, которая фильтрует список строк и возвращает список, содержащий только имена ваших друзей.
 Имя считается именем друга, если оно состоит ровно из 4 букв. В противном случае это не имя друга.
 
-Примеры:
-Input = ["Ryan", "Kieran", "Jason", "Yous"]
-Output = ["Ryan", "Yous"]
+Пример:
+Input: ["Ryan", "Kieran", "Jason", "Yous"]
+Output: ["Ryan", "Yous"]
 
-Input = ["Peter", "Stephen", "Joe"]
-Output = []
+https://www.codewars.com/kata/55b42574ff091733d900002f
 */
 
 #include <iostream>
