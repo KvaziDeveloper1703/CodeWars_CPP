@@ -1,5 +1,5 @@
 /*
-Write a function accum that takes a string as input and returns a new string formatted as follows:
+Write a function that takes a string as input and returns a new string formatted as follows:
 + For each character in the input string, repeat the character based on its position in the string (starting from 1).
 + Capitalize the first occurrence of the character and make the rest lowercase.
 + Separate each resulting group with a hyphen (-).
@@ -8,7 +8,7 @@ Examples:
 Input: "abcd" → Output: "A-Bb-Ccc-Dddd"
 Input: "RqaEzty" → Output: "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
 
-Напишите функцию accum, которая принимает строку в качестве входных данных и возвращает новую строку, отформатированную следующим образом:
+Напишите функцию, которая принимает строку в качестве входных данных и возвращает новую строку, отформатированную следующим образом:
 + Для каждого символа входной строки повторите его столько раз, какой его порядковый номер в строке (начиная с 1).
 + Первый символ группы должен быть с заглавной буквы, остальные — строчные.
 + Разделите каждую группу с помощью дефиса (-).
