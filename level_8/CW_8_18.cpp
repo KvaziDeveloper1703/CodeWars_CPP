@@ -10,13 +10,13 @@ https://www.codewars.com/kata/582cb0224e56e068d800003c
 
 #include <iostream>
 
-int litres(double given_time) {
-    return static_cast<int>(given_time * 0.5);
+int calculate_litres(double given_time) {
+    return static_cast<int>(given_time * 0.5); // Use static_cast<int> to convert the result of given_time * 0.5 (a floating-point number) to an integer by truncating the decimal part.
 }
 
 int main() {
     double hours = 6.7;
-    std::cout << litres(hours) << std::endl;
+    std::cout << calculate_litres(hours) << std::endl;
     return 0;
 }
 
