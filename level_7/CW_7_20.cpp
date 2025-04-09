@@ -1,15 +1,9 @@
 /*
-Implement a function that adds two numbers and returns their sum in binary. The conversion to binary can be done either before or after the addition.
+Write a function that adds two numbers and returns their sum in binary. The conversion to binary can be done either before or after the addition.
 
-Example:
-add_binary(5, 9) → "1110" 
-5 + 9 = 14 in decimal → "1110" in binary
+Напишите функцию, которая складывает два числа и возвращает их сумму в двоичной системе. Преобразование в двоичный формат можно выполнить до или после сложения.
 
-Реализуйте функцию, которая складывает два числа и возвращает их сумму в двоичной системе. Преобразование в двоичный формат можно выполнить до или после сложения.
-
-Пример:
-add_binary(5, 9) → "1110" 
-5 + 9 = 14 в десятичной → "1110" в двоичной
+https://www.codewars.com/kata/551f37452ff852b7bd000139
 */
 
 #include <iostream>
@@ -27,8 +21,8 @@ std::string decimal_to_binary(int given_number) {
     return binary;
 }
 
-std::string add_binary(int a, int b) {
-    int sum = a + b;
+std::string add_binary(int given_number_1, int given_number_2) {
+    int sum = given_number_1 + given_number_2;
     return decimal_to_binary(sum);
 }
 
