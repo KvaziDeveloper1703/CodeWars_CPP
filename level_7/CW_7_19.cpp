@@ -1,15 +1,11 @@
 /*
 A factory printer uses only colors labeled with letters 'a' to 'm'. The control string records the colors used. If any letter outside 'a' to 'm' appears, it's an error.
-Write a function printer_error that returns the error rate as "errors/total_length", without simplifying the fraction.
-
-Example:
-printer_error("aaabbbbhaijjjm") → "0/14"
+Write a function that returns the error rate as "errors/total_length", without simplifying the fraction.
 
 Принтер на заводе использует только цвета, обозначенные буквами от 'a' до 'm'. Контрольная строка фиксирует использованные цвета. Буквы за пределами 'a'–'m' считаются ошибками.
-Напишите функцию printer_error, которая возвращает долю ошибок в формате "ошибки/общая_длина", без сокращения дроби.
+Напишите функцию, которая возвращает долю ошибок в формате "ошибки/общая_длина", без сокращения дроби.
 
-Пример:
-printer_error("aaabbbbhaijjjm") → "0/14"
+https://www.codewars.com/kata/56541980fa08ab47a0000040
 */
 
 #include <iostream>
