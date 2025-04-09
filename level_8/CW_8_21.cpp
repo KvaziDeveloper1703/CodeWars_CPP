@@ -1,37 +1,38 @@
 /*
-Create a function finalGrade that calculates the final grade of a student based on two parameters: the grade for the exam and the number of completed projects.
-This function should take two arguments:
-+ exam — grade for the exam (from 0 to 100);
-+ projects — number of completed projects (0 and above).
+Write a function final_grade that returns the final grade based on the exam score and the number of completed projects.
++ Grade is 100 if exam > 90 OR projects > 10;
++ Grade is 90 if exam > 75 AND projects >= 5;
++ Grade is 75 if exam > 50 AND projects >= 2;
++ Otherwise, grade is 0.
 
-The function should return a number (final grade). There are four possible types of final grades:
-+ 100, if the exam grade is greater than 90 or if the number of completed projects is greater than 10;
-+ 90, if the exam grade is greater than 75 and the number of completed projects is at least 5;
-+ 75, if the exam grade is greater than 50 and the number of completed projects is at least 2;
-+ 0 in all other cases.
-
-Создайте функцию finalGrade, которая вычисляет финальную оценку студента в зависимости от двух параметров: оценки за экзамен и числа выполненных проектов.
-Эта функция должна принимать два аргумента:
-+ exam — оценка за экзамен (от 0 до 100);
-+ projects — количество выполненных проектов (от 0 и выше).
-
-Функция должна возвращать число (финальную оценку). Существуют четыре возможных типа финальных оценок:
-+ 100, если оценка за экзамен больше 90 или если количество выполненных проектов больше 10;
-+ 90, если оценка за экзамен больше 75 и количество выполненных проектов не меньше 5;
-+ 75, если оценка за экзамен больше 50 и количество выполненных проектов не меньше 2;
-+ 0 в остальных случаях.
+Напишите функцию final_grade, возвращающую итоговую оценку по баллу за экзамен и количеству проектов.
++ Оценка 100, если exam > 90 ИЛИ projects > 10;
++ Оценка 90, если exam > 75 И projects >= 5;
++ Оценка 75, если exam > 50 И projects >= 2;
++ Иначе оценка 0.
 
 https://www.codewars.com/kata/5ad0d8356165e63c140014d4/
 */
 
-int final_grade(int exam, int projects) {
-    if (exam > 90 || projects > 10) {
+#include <iostream>
+
+int final_grade(int given_exam_result, int given_number_of_projects) {
+    if (given_exam_result > 90 || given_number_of_projects > 10) {
         return 100;
-    } else if (exam > 75 && projects >= 5) {
+    } else if (given_exam_result > 75 && given_number_of_projects >= 5) {
         return 90;
-    } else if (exam > 50 && projects >= 2) {
+    } else if (given_exam_result > 50 && given_number_of_projects >= 2) {
         return 75;
     } else {
         return 0;
     }
+}
+
+int main() {
+    std::cout << "Exam: 100, Projects: 0 -> Final Grade: " << final_grade(100, 0) << std::endl;
+    std::cout << "Exam: 85, Projects: 5 -> Final Grade: " << final_grade(85, 5) << std::endl;
+    std::cout << "Exam: 70, Projects: 2 -> Final Grade: " << final_grade(70, 2) << std::endl;
+    std::cout << "Exam: 95, Projects: 2 -> Final Grade: " << final_grade(95, 2) << std::endl;
+    std::cout << "Exam: 60, Projects: 3 -> Final Grade: " << final_grade(60, 3) << std::endl;
+    return 0;
 }
