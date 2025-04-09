@@ -21,6 +21,8 @@ Output: "CATA"
 
 Ввод: "GTAT"
 Вывод: "CATA"
+
+https://www.codewars.com/kata/554e4a2f232cdd87d9000038
 */
 
 #include <iostream>
