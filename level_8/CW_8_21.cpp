@@ -1,15 +1,15 @@
 /*
-Write a function final_grade that returns the final grade based on the exam score and the number of completed projects.
-+ Grade is 100 if exam > 90 OR projects > 10;
-+ Grade is 90 if exam > 75 AND projects >= 5;
-+ Grade is 75 if exam > 50 AND projects >= 2;
-+ Otherwise, grade is 0.
+Write a function final_grade that returns the final grade based on the exam score and the number of completed projects:
+    - Grade is 100 if exam > 90 OR projects > 10;
+    - Grade is 90 if exam > 75 AND projects >= 5;
+    - Grade is 75 if exam > 50 AND projects >= 2;
+    - Otherwise, grade is 0.
 
-Напишите функцию final_grade, возвращающую итоговую оценку по баллу за экзамен и количеству проектов.
-+ Оценка 100, если exam > 90 ИЛИ projects > 10;
-+ Оценка 90, если exam > 75 И projects >= 5;
-+ Оценка 75, если exam > 50 И projects >= 2;
-+ Иначе оценка 0.
+Напишите функцию final_grade, возвращающую итоговую оценку по баллу за экзамен и количеству проектов:
+    - Оценка 100, если exam > 90 ИЛИ projects > 10;
+    - Оценка 90, если exam > 75 И projects >= 5;
+    - Оценка 75, если exam > 50 И projects >= 2;
+    - Иначе оценка 0.
 
 https://www.codewars.com/kata/5ad0d8356165e63c140014d4/
 */

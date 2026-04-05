@@ -20,13 +20,13 @@ int count_sheep(const std::vector<bool>& given_sheep_array) {
 }
 
 int main() {
-    std::vector<bool> sheep_array = {true, true, true, false,
-                                    true, true, true, true,
-                                    true, false, true, false,
-                                    true, false, false, true,
-                                    true, true, true, true,
-                                    false, false, true, true};
-    
+    std::vector<bool> sheep_array = {   true, true, true, false,
+                                        true, true, true, true,
+                                        true, false, true, false,
+                                        true, false, false, true,
+                                        true, true, true, true,
+                                        false, false, true, true
+                                };
     std::cout << "Number of sheeps: " << count_sheep(sheep_array) << std::endl;
     return 0;
 }

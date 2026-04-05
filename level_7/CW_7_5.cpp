@@ -12,14 +12,12 @@ https://www.codewars.com/kata/5467e4d82edf8bbf40000155
 #include <cstdint>
 
 uint64_t descending_order(uint64_t given_number) {
-
     std::string given_number_as_a_string = std::to_string(given_number);
     std::sort(given_number_as_a_string.begin(), given_number_as_a_string.end(), std::greater<char>());
     uint64_t highest_number = 0;
     for (char digit : given_number_as_a_string) {
         highest_number = highest_number * 10 + (digit - '0');
     }
-
     return highest_number;
 }
 
@@ -27,8 +25,6 @@ int main() {
     std::cout << "Write your number here, please: ";
     uint64_t number;
     std::cin >> number;
-
     std::cout << descending_order(number) << std::endl;
-
     return 0;
 }

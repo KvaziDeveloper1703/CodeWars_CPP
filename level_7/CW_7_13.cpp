@@ -12,11 +12,9 @@ https://www.codewars.com/kata/558fc85d8fd1938afb000014
 using namespace std;
 
 long long sum_two_smallest_numbers(const vector<int>& given_numbers) {
-    if (given_numbers.size() < 4) return -1;
-    
+    if (given_numbers.size() < 4) return -1;    
     long long first_min = numeric_limits<long long>::max();
     long long second_min = numeric_limits<long long>::max();
-    
     for (long long number : given_numbers) {
         if (number < first_min) {
             second_min = first_min;
@@ -25,7 +23,6 @@ long long sum_two_smallest_numbers(const vector<int>& given_numbers) {
             second_min = number;
         }
     }
-    
     return first_min + second_min;
 }
 

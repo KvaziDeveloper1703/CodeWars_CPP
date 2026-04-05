@@ -44,8 +44,6 @@ std::string find_high_and_low(const std::string& given_numbers) {
 
 int main() {
     std::string input = "1 2 3 4 5";
-
     std::cout << "Input: \"" << input << "\" → Output: \"" << find_high_and_low(input) << "\"" << std::endl;
-
     return 0;
 }

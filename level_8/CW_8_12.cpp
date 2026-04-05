@@ -22,6 +22,5 @@ int find_the_smallest(const std::vector<int>& given_numbers) {
 int main() {
     std::vector<int> numbers = {34, 15, 88, 2};
     std::cout << "Smallest number: " << find_the_smallest(numbers) << std::endl;
-
     return 0;
 }

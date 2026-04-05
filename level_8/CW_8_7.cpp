@@ -20,10 +20,7 @@ int sum_of_squares(const std::vector<int>& given_numbers) {
 
 int main() {
     std::vector<int> input = {1, 2, 3};
-
     int result = sum_of_squares(input);
-
     std::cout << "Sum of squares: " << result << std::endl;
-
     return 0;
 }

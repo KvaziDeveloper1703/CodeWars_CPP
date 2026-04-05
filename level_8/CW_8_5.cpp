@@ -15,11 +15,8 @@ std::string number_to_string(int given_number) {
 
 int main() {
     int input;
-
     std::cout << "Enter an integer: ";
     std::cin >> input;
-
     std::cout << "The number as a string is: " << number_to_string(input) << std::endl;
-
     return 0;
 }

@@ -32,13 +32,11 @@ std::vector<std::string> friend_or_foe(const std::vector<std::string>& given_nam
 
 int main() {
     std::vector<std::string> input = {"Ryan", "Kieran", "Jason", "Yous"};
-    std::vector<std::string> output = friend_or_foe(input);
-    
+    std::vector<std::string> output = friend_or_foe(input);    
     std::cout << "Output: ";
     for (const std::string& name : output) {
         std::cout << name << " ";
     }
     std::cout << std::endl;
-    
     return 0;
 }

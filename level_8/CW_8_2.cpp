@@ -18,11 +18,8 @@ int make_negative(int given_number) {
 
 int main() {
     int input;
-    
     std::cout << "Enter a number: ";
     std::cin >> input;
-    
     std::cout << "The negative form is " << make_negative(input) << "." << std::endl;
-
     return 0;
 }

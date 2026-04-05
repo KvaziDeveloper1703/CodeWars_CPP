@@ -18,10 +18,8 @@ https://www.codewars.com/kata/52597aa56021e91c93000cb0
 #include <iostream>
 
 std::vector<int> move_zeroes(const std::vector<int>& input) {
-
     std::vector<int> result;
     int zero_count = 0;
-
     for (int num : input) {
         if (num != 0) {
             result.push_back(num);
@@ -29,19 +27,15 @@ std::vector<int> move_zeroes(const std::vector<int>& input) {
             zero_count++;
         }
     }
-
     result.insert(result.end(), zero_count, 0);
-
     return result;
 }
 
 int main() {
     std::vector<int> input = {0, 1, 0, 3, 12};
     std::vector<int> output = move_zeroes(input);
-
     for (int num : output) {
         std::cout << num << " ";
     }
-
     return 0;
 }

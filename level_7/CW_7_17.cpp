@@ -24,18 +24,15 @@ https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d
 
 bool string_ends_with(const std::string& given_string, const std::string& given_suffix) {
     int string_length = given_string.length();
-    int suffix_length = given_suffix.length();
-    
+    int suffix_length = given_suffix.length();    
     if (suffix_length > string_length) {
         return false;
     }
-    
     for (int i = 0; i < suffix_length; i++) {
         if (given_string[string_length - suffix_length + i] != given_suffix[i]) {
             return false;
         }
     }
-    
     return true;
 }
 

@@ -14,13 +14,11 @@ https://www.codewars.com/kata/56541980fa08ab47a0000040
 std::string printer_error(const std::string& given_string) {
     int error_count = 0;
     int total_count = given_string.length();
-
     for (char character : given_string) {
         if (character < 'a' || character > 'm') {
             error_count++;
         }
     }
-
     return std::to_string(error_count) + "/" + std::to_string(total_count);
 }
 

@@ -31,10 +31,8 @@ std::string remove_vowels(const std::string& given_string) {
 
 int main() {
     std::string input = "This website is for losers LOL!";
-
     std::string output = remove_vowels(input);
     std::cout << "Input: \"" << input << "\"\n";
     std::cout << "Output: \"" << output << "\"\n";
-
     return 0;
 }

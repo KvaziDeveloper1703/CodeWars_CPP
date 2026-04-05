@@ -12,31 +12,23 @@ https://www.codewars.com/kata/5656b6906de340bd1b0000ac
 
 std::string sorted_unique_letters(const std::string& given_string_1, const std::string& given_string_2) {
     std::set<char> unique_characters;
-
     for (char character : given_string_1) {
         unique_characters.insert(character);
     }
-
     for (char character : given_string_2) {
         unique_characters.insert(character);
     }
-
     std::string result;
-
     for (char character : unique_characters) {
         result += character;
     }
-
     return result;
 }
 
 int main() {
     std::string string_1 = "xyaabbbccccdefww";
     std::string string_2 = "xxxxyyyyabklmopq";
-
     std::string result = sorted_unique_letters(string_1, string_2);
-
     std::cout << "Result: " << result << std::endl;
-    
     return 0;
 }

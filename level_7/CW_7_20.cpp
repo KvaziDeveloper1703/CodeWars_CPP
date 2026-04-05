@@ -12,12 +12,10 @@ https://www.codewars.com/kata/551f37452ff852b7bd000139
 std::string decimal_to_binary(int given_number) {
     if (given_number == 0) return "0";
     std::string binary = "";
-
     while (given_number > 0) {
         binary = std::to_string(given_number % 2) + binary;
         given_number /= 2;
     }
-
     return binary;
 }
 
@@ -29,6 +27,5 @@ std::string add_binary(int given_number_1, int given_number_2) {
 int main() {
     int number_1 = 5, number_2 = 9;
     std::cout << "Sum of " << number_1 << " and " << number_2 << " in binary: " << add_binary(number_1, number_2) << std::endl;
-
     return 0;
 }

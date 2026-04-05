@@ -1,9 +1,8 @@
 /*
 Write a function that transforms a given sentence according to the following rules:
-
-Move the first letter of each word to the end of the word.
-+ Append "ay" to the end of the word.
-+ Leave punctuation marks (!, ., ,, etc.) untouched.
+    - Move the first letter of each word to the end of the word;
+    - Append "ay" to the end of the word;
+    - Leave punctuation marks untouched.
 
 Examples:
 Input: 'Pig latin is cool'
@@ -13,10 +12,9 @@ Input: 'Hello world !'
 Output: 'elloHay orldway !'
 
 Напишите функцию, которая преобразует переданное предложение по следующим правилам:
-
-+ Переместите первую букву каждого слова в конец слова.
-+ Добавьте "ay" в конец слова.
-+ Знаки пунктуации (!, ., , и т.д.) не изменяйте.
+    - Переместите первую букву каждого слова в конец слова;
+    - Добавьте "ay" в конец слова;
+    - Знаки пунктуации не изменяйте.
 
 Примеры:
 Ввод: 'Pig latin is cool'
@@ -37,7 +35,6 @@ std::string pig_it(std::string str) {
     std::istringstream iss(str);
     std::ostringstream oss;
     std::string word;
-
     while (iss >> word) {
         if (std::isalpha(word[0])) {
             std::string transformed = word.substr(1) + word[0] + "ay";
@@ -45,21 +42,17 @@ std::string pig_it(std::string str) {
         } else {
             oss << word;
         }
-
         if (iss.peek() != EOF) {
             oss << " ";
         }
     }
-
     return oss.str();
 }
 
 int main() {
     std::string input1 = "Pig latin is cool";
     std::string input2 = "Hello world !";
-
     std::cout << pig_it(input1) << std::endl;
     std::cout << pig_it(input2) << std::endl;
-
     return 0;
 }

@@ -1,7 +1,7 @@
 /*
 Given a DNA strand, return its complementary strand based on the pairing rules:
-+ "A" → "T"
-+ "C" → "G"
+    - "A" → "T";
+    - "C" → "G".
 
 Examples:
 Input: "ATTGC"
@@ -11,11 +11,10 @@ Input: "GTAT"
 Output: "CATA"
 
 Дана цепь ДНК. Верните комплементарную цепь по правилам:
-+ "A" → "T"
-+ "C" → "G"
+    - "A" → "T";
+    - "C" → "G".
 
 Примеры:
-
 Ввод: "ATTGC"
 Вывод: "TAACG"
 

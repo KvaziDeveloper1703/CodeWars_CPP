@@ -22,6 +22,5 @@ std::string remove_spaces(const std::string& given_string) {
 int main() {
     std::string input = "8 j 8   mBliB8g  imjB8B8  jl  B";
     std::cout << "Result: " << remove_spaces(input) << std::endl;
-
     return 0;
 }

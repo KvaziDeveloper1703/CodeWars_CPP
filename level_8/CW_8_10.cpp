@@ -18,8 +18,6 @@ int summation(int given_number) {
 
 int main() {
     int number = 10;
-
     std::cout << "Input: 10 → Output: " << summation(number) << std::endl;
-
     return 0;
 }

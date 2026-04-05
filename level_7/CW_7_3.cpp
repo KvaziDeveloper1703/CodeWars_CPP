@@ -24,8 +24,6 @@ int square_digits(int given_number) {
 
 int main() {
     int input = 765;
-
     std::cout << "Input: " << input << " → Output: " << square_digits(input) << std::endl;
-
     return 0;
 }

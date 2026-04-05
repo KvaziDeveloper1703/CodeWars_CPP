@@ -15,7 +15,6 @@ int string_to_number(const std::string& given_string) {
 
 int main() {
     std::string my_string = "1234";
-    std::cout << string_to_number(my_string) << std::endl;
-    
+    std::cout << string_to_number(my_string) << std::endl;    
     return 0;
 }

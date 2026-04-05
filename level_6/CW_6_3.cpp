@@ -1,12 +1,10 @@
 /*
 Create a function that takes an array of names and returns a string describing who likes an item. The format of the output depends on the number of names in the array:
-
-Rules:
-+ If the array is empty, return "no one likes this".
-+ If the array contains one name, return "<Name> likes this".
-+ If the array contains two names, return "<Name1> and <Name2> like this".
-+ If the array contains three names, return "<Name1>, <Name2> and <Name3> like this".
-+ If the array contains four or more names, return "<Name1>, <Name2> and <Number> others like this", where <Number> is the count of remaining names.
+    - If the array is empty, return "no one likes this";
+    - If the array contains one name, return "<Name> likes this";
+    - If the array contains two names, return "<Name1> and <Name2> like this";
+    - If the array contains three names, return "<Name1>, <Name2> and <Name3> like this";
+    - If the array contains four or more names, return "<Name1>, <Name2> and <Number> others like this", where <Number> is the count of remaining names.
 
 Examples:
 Input: [] → Output: "no one likes this"
@@ -16,13 +14,11 @@ Input: ["Max", "John", "Mark"] → Output: "Max, John and Mark like this"
 Input: ["Alex", "Jacob", "Mark", "Max"] → Output: "Alex, Jacob and 2 others like this"
 
 Создайте функцию, которая принимает массив имён и возвращает строку, описывающую, кто поставил "лайк" объекту. Формат вывода зависит от количества имён в массиве:
-
-Правила:
-+ Если массив пустой, вернуть "no one likes this".
-+ Если в массиве одно имя, вернуть "<Имя> likes this".
-+ Если в массиве два имени, вернуть "<Имя1> and <Имя2> like this".
-+ Если в массиве три имени, вернуть "<Имя1>, <Имя2> and <Имя3> like this".
-+ Если в массиве четыре и более имён, вернуть "<Имя1>, <Имя2> and <Число> others like this", где <Число> — количество оставшихся имён.
+    - Если массив пустой, вернуть "no one likes this";
+    - Если в массиве одно имя, вернуть "<Имя> likes this";
+    - Если в массиве два имени, вернуть "<Имя1> and <Имя2> like this";
+    - Если в массиве три имени, вернуть "<Имя1>, <Имя2> and <Имя3> like this";
+    - Если в массиве четыре и более имён, вернуть "<Имя1>, <Имя2> and <Число> others like this", где <Число> - количество оставшихся имён.
 
 Примеры:
 Ввод: [] → Вывод: "no one likes this"
@@ -40,7 +36,6 @@ https://www.codewars.com/kata/5266876b8f4bf2da9b000362
 
 std::string likes(const std::vector<std::string>& names) {
     size_t count = names.size();
-
     if (count == 0) {
         return "no one likes this";
     } else if (count == 1) {
@@ -57,7 +52,6 @@ std::string likes(const std::vector<std::string>& names) {
 int main() {
     std::vector<std::string> names;
     std::string name;
-
     std::cout << "Enter names (type 'done' to finish):" << std::endl;
     while (true) {
         std::getline(std::cin, name);
@@ -66,8 +60,6 @@ int main() {
         }
         names.push_back(name);
     }
-
     std::cout << likes(names) << std::endl;
-
     return 0;
 }

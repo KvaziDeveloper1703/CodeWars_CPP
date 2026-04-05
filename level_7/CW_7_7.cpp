@@ -15,7 +15,6 @@ bool is_perfect_square(int given_number) {
     if (given_number < 0) {
         return false;
     }
-
     int sqrt_value = static_cast<int>(std::sqrt(given_number));
     return sqrt_value * sqrt_value == given_number;
 }
@@ -24,12 +23,10 @@ int main() {
     std::cout << "Enter a number: ";
     int input;
     std::cin >> input;
-
     if (is_perfect_square(input)) {
         std::cout << input << " is a perfect square." << std::endl;
     } else {
         std::cout << input << " is not a perfect square." << std::endl;
     }
-
     return 0;
 }

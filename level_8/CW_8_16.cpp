@@ -12,18 +12,14 @@ https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3
 
 std::string abbreviate_name(const std::string& given_name) {
     size_t space_index = given_name.find(' ');
-    if (space_index == std::string::npos) return "";
-    
+    if (space_index == std::string::npos) return "";    
     char first_initial = std::toupper(given_name[0]);
     char second_initial = std::toupper(given_name[space_index + 1]);
-    
     return std::string(1, first_initial) + "." + second_initial;
 }
 
 int main() {
     std::string name = "Sam Harris";
-    
-    std::cout << abbreviate_name(name) << std::endl;
-    
+    std::cout << abbreviate_name(name) << std::endl;    
     return 0;
 }

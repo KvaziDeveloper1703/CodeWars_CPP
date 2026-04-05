@@ -15,7 +15,6 @@ using namespace std;
 int find_the_shortest_word_length(const string& given_string) {
     int min_length = given_string.length();
     int current_length = 0;
-    
     for (char character : given_string) {
         if (character == ' ') {
             if (current_length > 0 && current_length < min_length) {
@@ -26,11 +25,9 @@ int find_the_shortest_word_length(const string& given_string) {
             current_length++;
         }
     }
-    
     if (current_length > 0 && current_length < min_length) {
         min_length = current_length;
     }
-    
     return min_length;
 }
 

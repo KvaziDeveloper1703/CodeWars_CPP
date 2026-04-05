@@ -19,11 +19,8 @@ std::string even_or_odd(int given_number) {
 
 int main() {
     int input;
-
     std::cout << "Enter an integer: ";
     std::cin >> input;
-    
     std::cout << "The number is " << even_or_odd(input) << "." << std::endl;
-
     return 0;
 }

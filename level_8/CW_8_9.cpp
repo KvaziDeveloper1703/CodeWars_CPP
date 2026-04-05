@@ -20,8 +20,6 @@ std::string repeat_string(int N, const std::string& given_string) {
 int main() {
     int N = 5;
     std::string string = "Hello";
-
     std::cout << "Input: 5, \"Hello\" → Output: \"" << repeat_string(N, string) << "\"" << std::endl;
-
     return 0;
 }

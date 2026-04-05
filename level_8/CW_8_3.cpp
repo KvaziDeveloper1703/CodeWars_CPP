@@ -22,6 +22,5 @@ int positive_sum(const std::vector<int>& given_numbers) {
 int main() {
     std::vector<int> numbers = {1, -4, 7, 12};
     std::cout << "The sum of positive numbers is " << positive_sum(numbers) << "." << std::endl;
-
     return 0;
 }

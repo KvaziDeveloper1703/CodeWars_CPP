@@ -22,6 +22,5 @@ int count_vowels(const std::string& given_string) {
 int main() {
     std::string input = "viktor";
     std::cout << "Input: \"viktor\" → Output: " << count_vowels(input) << std::endl;
-
     return 0;
 }
